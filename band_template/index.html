@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false" onmousedown="return false">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="DEIOMEN dark ambient music.">
+    <meta name="keywords" content="DEIOMEN, dark ambient musical project from composer Brandon Marcelle.">
+    <meta name="author" content="DEIOMEN">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|EB+Garamond&display=swap" rel="stylesheet">
+    <title>Simple JS Responsive Navigation</title>
+  </head>
+  <body>
+    <header>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav();init()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()&init()" class="navbtn">Discography</a>
+            <a href="live.html" onclick="closeNav()&init()" class="navbtn">Live</a>
+            <a href="merch.html" onclick="closeNav()&init()" class="navbtn">Merchandise</a>
+            <a href="index.html" onclick="closeNav()&init()" class="navbtn">Listen</a>
+          </div>
+        </div>
+          <span id="menu" style="cursor:pointer;" onclick="openNav()&removeFooterNav()" class="hamburger">&#9776;</span>
+        <script>
+          function openNav() {
+            document.getElementById("myNav").style.display = "block";
+            document.getElementById("*").style = "initial";
+          }
+            function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+            }
+            function init() {
+              document.getElementById("*").style = "initial";
+            }
+        </script>
+    </header>
+    <main>
+      <img class="logo" src="images/logo_transparent.png" alt="DEIOMEN logo">
+      <img class="logo" src="images/title.png" alt="DEIOMEN logo" style="padding:25px;">
+      <!--<h1 class="header-caption">Melodies for sociopaths.</h1>-->
+        <div class="content">
+          <img class="album" src="music/beg.jpg" alt="DEIOMEN beg album cover">
+
+          <img class="album" src="music/keys.png" alt="DEIOMEN album cover">
+          <img class="album" src="music/triangle.jpg" alt="DEIOMEN album cover">
+        </div>
+      <div class="links">
+        <a href=""><img class="links" src="images/applemusic.png" alt=""></a>
+        <a href=""><img class="links" src="images/spotify.png" alt=""></a>
+        <a href=""><img class="links" src="images/bandcamp.png" alt=""></a>
+      </div>
+    </main>
+    <footer>
+     </footer>
+  </body>
+</html>
